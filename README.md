@@ -4,7 +4,7 @@ Blocitoff manages your tasks deleting to-do items that have not been completed a
 
 I am receiving generous help from my mentor Dalibor Ilijevski.
 
-Find the app <a href=" https://viral-blocitoff.herokuapp.com/">here</a>
+Find the app at [viral-blocitoff](https://viral-blocitoff.herokuapp.com/)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
