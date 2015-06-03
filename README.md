@@ -1,8 +1,10 @@
 == README
 
-Blocitoff: Blocitoff manages your tasks deleting to-do items that have not been completed after seven days. The assumption is that if the to-do item is not important enough to be completed in seven days, it doesn't belong on your to-do list.
+Blocitoff manages your tasks deleting to-do items that have not been completed after seven days. The assumption is that if the to-do item is not important enough to be completed in seven days, it doesn't belong on your to-do list.
 
 I am receiving generous help from my mentor Dalibor Ilijevski.
+
+Find the app <a href=" https://viral-blocitoff.herokuapp.com/">here</a>
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
