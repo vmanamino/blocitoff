@@ -51,3 +51,7 @@ group :development, :test do
   # Rubocop gem
   gem 'rubocop', require: false
 end
+
+# Devise gem to authenticate Blocitoff's users
+gem 'devise'
+
