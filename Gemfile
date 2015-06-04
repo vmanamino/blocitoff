@@ -55,3 +55,7 @@ end
 # Devise gem to authenticate Blocitoff's users
 gem 'devise'
 
+gem 'figaro', '1.0'
+
+
+
