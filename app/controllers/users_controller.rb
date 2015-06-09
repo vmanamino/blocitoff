@@ -1,10 +1,7 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(params[:id])
+    # @user = User.find(params[:id])
+    @user = current_user
     authorize @user
-    @name = @user.name
-    @email = @user.email
-    @confirmed = @user.confirmed_at
-    
   end
 end
