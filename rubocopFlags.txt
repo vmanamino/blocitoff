@@ -1,0 +1,68 @@
+Inspecting 15 files
+.......CCC.CCC.
+
+Offenses:
+
+app/policies/user_policy.rb:1:37: C: Trailing whitespace detected.
+class UserPolicy < ApplicationPolicy  
+                                    ^^
+app/policies/user_policy.rb:2:1: C: Trailing whitespace detected.
+app/policies/user_policy.rb:5:17: C: Use the new Ruby 1.9 hash syntax.
+    scope.where(:id => record.id).exists? && (user.present? && (user.id == record.id || user.admin?)) 
+                ^^^^^^
+app/policies/user_policy.rb:5:102: C: Trailing whitespace detected.
+    scope.where(:id => record.id).exists? && (user.present? && (user.id == record.id || user.admin?)) 
+                                                                                                     ^
+app/policies/user_policy.rb:7:1: C: Trailing whitespace detected.
+app/policies/user_policy.rb:8:4: C: Final newline missing.
+end
+   
+app/policies/application_policy.rb:14:17: C: Use the new Ruby 1.9 hash syntax.
+    scope.where(:id => record.id).exists?    
+                ^^^^^^
+app/policies/application_policy.rb:14:42: C: Trailing whitespace detected.
+    scope.where(:id => record.id).exists?    
+                                         ^^^^
+app/policies/application_policy.rb:55:1: C: 1 trailing blank lines detected.
+app/controllers/users_controller.rb:3:5: C: Missing space after #.
+    #@user = User.find(params[:id])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users_controller.rb:6:25: C: Trailing whitespace detected.
+    @items = @user.items    
+                        ^^^^
+app/controllers/items_controller.rb:6:1: C: Trailing whitespace detected.
+app/controllers/items_controller.rb:7:3: C: Assignment Branch Condition size for create is too high. [17.15/15]
+  def create
+  ^^^
+app/controllers/items_controller.rb:11:1: C: Trailing whitespace detected.
+app/controllers/items_controller.rb:13:24: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+      flash[:notice] = "Item was saved"
+                       ^^^^^^^^^^^^^^^^
+app/controllers/items_controller.rb:16:23: C: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+      flash[:error] = "There was an error, your item was not saved!"
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/items_controller.rb:19:1: C: Trailing whitespace detected.
+app/controllers/items_controller.rb:21:1: C: Trailing whitespace detected.
+app/controllers/application_controller.rb:7:1: C: Trailing whitespace detected.
+app/controllers/application_controller.rb:11:1: C: Trailing whitespace detected.
+app/controllers/application_controller.rb:12:4: C: Inconsistent indentation detected.
+   def after_sign_in_path_for(resource)
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/application_controller.rb:13:6: C: Redundant return detected.
+     return user_path(resource)
+     ^^^^^^
+app/controllers/application_controller.rb:15:1: C: Trailing whitespace detected.
+app/controllers/application_controller.rb:16:4: C: Indent access modifiers like protected.
+   protected
+   ^^^^^^^^^
+app/controllers/application_controller.rb:17:1: C: Trailing whitespace detected.
+app/controllers/application_controller.rb:18:4: C: Inconsistent indentation detected.
+   def configure_permitted_parameters
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/application_controller.rb:21:1: C: Trailing whitespace detected.
+app/models/user.rb:6:1: C: Trailing whitespace detected.
+app/models/user.rb:8:1: C: Trailing whitespace detected.
+app/models/user.rb:12:1: C: Trailing whitespace detected.
+app/models/user.rb:13:1: C: Trailing whitespace detected.
+
+15 files inspected, 31 offenses detected
