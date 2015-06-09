@@ -7,7 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <ul>
+   <div class="container">
+    <ul class="nav nav-tabs">
     <li><%= link_to "Home", welcome_index_path %></li>
     <li><%= link_to "About", welcome_about_path %></li>  
     
@@ -19,10 +20,8 @@
              <%= link_to "Sign Up", new_user_registration_path %>
            <% end %>
     </div>
-  </ul>
-  
-  <%= yield %>
-  
+    </ul>
+   
   <% if flash[:notice] %>
       <div class="alert alert-success">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -40,5 +39,8 @@
       </div>
   <% end %>
 
+ <%= yield %>
+ </div> 
+     
 </body>
 </html>
