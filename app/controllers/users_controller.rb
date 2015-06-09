@@ -4,7 +4,6 @@ class UsersController < ApplicationController
     authorize @user
     @name = @user.name
     @email = @user.email
-    @confirmed = @user.confirmed_at
-    
+    @items = @user.items    
   end
 end

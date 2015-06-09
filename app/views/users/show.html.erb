@@ -4,5 +4,23 @@
 <h2>Your email address: </h2><br/>
 <h1><%= @email %></h1><br/>
 
-<h2>Your account was confirmed: </h2><br/>
-<h1><%= @confirmed %></h1>
+<h2>Your items</h2>
+
+<% @items.each do |item| %>
+<div class="row">
+  <div class="col-md-8">
+  <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">
+          <%= render partial: 'items/item', locals: {item: item} %>
+        </h4>
+      </div>
+  </div>
+  </div>
+  
+</div>
+<% end %>
+<div class="col-md-4">
+  <%= link_to "New Item", new_user_item_path(@user), class: 'btn btn-success' %>
+</div>  
+  
