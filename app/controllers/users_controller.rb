@@ -3,6 +3,5 @@ class UsersController < ApplicationController
     @user = current_user
     authorize @user
     @items = @user.items
-    @item = Item.new
   end
 end
