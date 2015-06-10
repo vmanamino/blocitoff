@@ -1,4 +1,4 @@
-class ItemsController < ApplicationController  
+class ItemsController < ApplicationController
   def create
     @user = current_user
     authorize @user
