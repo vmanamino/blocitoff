@@ -3,7 +3,6 @@ class ItemsController < ApplicationController
     @user = current_user
     authorize @user
     @item = current_user.items.build(item_params)
-    @item.user = @user
     if @item.save
       flash[:notice] = 'Item was saved'
       redirect_to [@user]
