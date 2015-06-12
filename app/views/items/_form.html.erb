@@ -1,0 +1,5 @@
+<%= form_for [@user, @user.items.build] do |f| %>
+<%= f.label :Todo %>
+  <%= f.text_field :name %>
+  <%= f.submit "Save" %>
+<% end %>
