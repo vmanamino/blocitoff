@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-8">
       <small>
-        <h6><%= item.days_left %> day(s) left before destruction</h6>
+        <h6><%= pluralize(item.days_left, 'day') %> left before destruction</h6>
       </small>        
         </div>
       </div>
