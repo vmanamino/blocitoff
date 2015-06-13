@@ -1,4 +1,6 @@
 class ItemsController < ApplicationController
+  before_action :authenticate_user!
+
   def create
     @user = current_user
     authorize @user
@@ -11,19 +13,15 @@ class ItemsController < ApplicationController
       render :new
     end
   end
-  
+
   def destroy
     @user = current_user
     @item = @user.items.find(params[:id])
-    
     if @item.destroy
-      flash[:notice] = "Item was removed"
-      # redirect_to [@user]
+      flash[:notice] = 'Item was removed'
     else
       flash[:error] = "Item couldn't be removed, try again"
-      # redirect_to [@user]
-    end    
-    
+    end
     respond_to do |format|
       format.html
       format.js
