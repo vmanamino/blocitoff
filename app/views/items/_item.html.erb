@@ -2,7 +2,15 @@
 <div class="media-body">
   <div class="row">
     <div class="col-md-7"><%= item.name %>
-      <%= link_to "", [user, item], method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %></div>
+      <%= link_to "", [user, item], method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+      <div class="row">
+        <div class="col-md-8">
+      <small>
+        <h6><%= pluralize(item.days_left, 'day') %> left before destruction</h6>
+      </small>        
+        </div>
+      </div>
+    </div>
   <% end %>
   </div>
 </div>

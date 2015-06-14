@@ -17,11 +17,8 @@ class ItemsController < ApplicationController
   def destroy
     @user = current_user
     @item = @user.items.find(params[:id])
-    if @item.destroy
-      flash[:notice] = 'Item was removed'
-    else
-      flash[:error] = "Item couldn't be removed, try again"
-    end
+    flash[:error] = "Item couldn't be removed, try again" unless @item.destroy
+
     respond_to do |format|
       format.html
       format.js
