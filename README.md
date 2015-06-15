@@ -1,34 +1,12 @@
 == README
 
-Blocitoff manages your tasks deleting to-do items that have not been completed after seven days. The assumption is that if the to-do item is not important enough to be completed in seven days, it doesn't belong on your to-do list.
+Blocitoff manages your tasks allowing you to use a rake task to delete to-do items that have not been completed after seven days. The assumption is that if the to-do item is not important enough to be completed in seven days, it doesn't belong on your to-do list.  
 
 I am receiving generous help from my mentor Dalibor Ilijevski.
 
 Find the app at [viral-blocitoff](https://viral-blocitoff.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+If you clone the repo and use the code, refer to the application.example.yml file for the environment variables you need to assign values to.  You'll see there that I'm using Sendgrid and Devise for email and authentication.  I recommend you install the Figaro gem which lets you set environment variables for production in one command. 
 
-Things you may want to cover:
+I did this project in order to learn how to build rails apps, so although it functions, it's not pretty. Even the functionality is limited.  I could have added more, but I wanted to focus my attention on the requirements which would help me to master specific aspects of Rails web development.  As in any craft, a solid foundation sets you up well to do complicated things. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
