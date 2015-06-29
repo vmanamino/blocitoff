@@ -6,7 +6,5 @@ I am receiving generous help from my mentor Dalibor Ilijevski.
 
 Find the app at [viral-blocitoff](https://viral-blocitoff.herokuapp.com/)
 
-If you clone the repo and use the code, refer to the application.example.yml file for the environment variables you need to assign values to.  You'll see there that I'm using Sendgrid and Devise for email and authentication.  I recommend you install the Figaro gem which lets you set environment variables for production in one command. 
-
 I did this project in order to learn how to build rails apps, so although it functions, it's not pretty. Even the functionality is limited.  I could have added more, but I wanted to focus my attention on the requirements which would help me to master specific aspects of Rails web development.  As in any craft, a solid foundation sets you up well to do complicated things. 
 
